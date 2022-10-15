@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,500;1,100;1,200;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*----inicio de header----*/
+.imagen {
+    width: 50px;
+}
+
+a,
+a:active {
+    text-decoration: none;
+    color: #f5f2f1;
+}
+
+.disf-header {
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgba(240, 103, 66, 0.911);
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.df-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.df-logo p {
+    margin: 10px;
+}
+
+.imagen {
+    border-radius: 25px;
+}
+
+.dfbarra {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+
+.dfbarra li {
+    margin: 8px;
+    font-family: 'Raleway', sans-serif;
+}
+.navegacion :hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+    border-radius: 6px;
+
+}
+
+.titulo {
+    color: rgb(247, 245, 245);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+/*----fin de header----*/
+
+/*----inicio de mi portada----*/
+.porta {
+    background-image: url(../imagenes/fondomil.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+
+
+}
+
+.titulo-portada {
+    background-color: rgba(255, 255, 255, 0.548);
+    text-align: center;
+    font-size: 3vw;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 25px;
+    position: absolute;
+    top: 120px;
+}
+
+/*----Tarjetas----*/
+
+.container-card {
+    display: grid;
+    gap: 20px;
+    padding: 80px;
+    grid-column-gap: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, 1fr);
+
+}
+
+.titulo-cards {
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    min-width: 250px;
+}
+
+.card {
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease-out;
+    cursor: default;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.card img {
+    width: 100%;
+    height: 210px;
+}
+
+.card .contenido-card {
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido-card h3 {
+    margin-bottom: 15px;
+    color: #7a7a7a;
+}
+
+.card .contenido-card p {
+    line-height: 1.8;
+    color: #6a6a6a;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.card .contenido-card a {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    margin-bottom: 5px;
+}
+
+.card .contenido-card a:hover {
+    background: #2fb4cc;
+    color: #fff;
+}
+
+/*----fin de las Tarjetas----*/
+.img-fondo {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    background-image: url(../imagenes/pexels-monstera-5874661.jpg);
+}
+
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.animacion {
+    animation-name: mianimacion;
+    animation-duration: 4s;
+    position: relative;
+    animation-direction: reverse;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mianimacion {
+    0% {
+        left: 0px;
+    }
+
+    25% {
+        left: 20px;
+    }
+
+    50% {
+        left: 30px;
+    }
+
+    75% {
+        left: 15px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+.redes-sociales {
+    font-size: 25px;
+    text-align: end;
+    margin-right: 150px;
+    padding: 10px 20px;
+}
+
+.redes-sociales a :hover {
+    transform: scale(2.0);
+    transition: all 1s ease;
+}
+
+.titulo-footer {
+    text-align: center;
+    margin: 30px;
+}
+
+.linea {
+    display: block;
+    margin-top: 15px;
+    border: 1px dashed grey;
+    height: 0;
+    width: 100%
+}
+
+.linea2 {
+    display: block;
+    margin-top: 15px;
+
+    border: 1px dashed rgb(234, 143, 216);
+    height: 0;
+    width: 100%;
+    align-items: center;
+
+}
+
+/*----- formulario---*/
+.form-contact {
+    /* background-color: brown; */
+    font-size: 1.5vw;
+    height: 150vh;
+    gap: 20px;
+    /* margin-left: 50px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* justify-items: center; */
+    align-items: center;
+}
+
+.form-contact__part {
+    background-color: silver;
+    border: 3px solid rgb(39, 37, 37);
+    width: 40vw;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.portadacon {
+    background-image: url(../imagenes/FotoJett.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.porta-deco {
+    background-image: url(../imagenes/FotoJet.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.porta-torta {
+    background-image: url(../imagenes/portada-torta.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.porta-arreglos {
+    background-image: url(../imagenes/fondomil.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
