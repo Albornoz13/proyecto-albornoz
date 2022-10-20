@@ -361,3 +361,9 @@ a:active {
         background: #f3840581;
     }
 }
+.carousel{
+    display: flex;
+width: 100%;
+height: auto;
+padding: 10vh;
+}
