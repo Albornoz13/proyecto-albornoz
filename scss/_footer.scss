@@ -1,0 +1,42 @@
+.titulo-footer {
+    text-align: center;
+    margin: 30px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 200px;
+
+}
+
+.redes-sociales {
+    font-size: 25px;
+    text-align: end;
+    margin-right: 150px;
+    padding: 10px 20px;
+}
+
+.redes-sociales a :hover {
+    transform: scale(2.0);
+    transition: all 1s ease;
+}
+
+.linea {
+    display: block;
+    margin-top: 15px;
+    border: 1px dashed grey;
+    height: 0;
+    width: 100%
+}
+
+.linea2 {
+    display: block;
+    margin-top: 15px;
+
+    border: 1px dashed rgb(234, 143, 216);
+    height: 0;
+    width: 100%;
+    align-items: center;
+
+}

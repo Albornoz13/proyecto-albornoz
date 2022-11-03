@@ -1,0 +1,21 @@
+/*----- inicio de galeria tortas---*/
+#galeria .col-lg-4 {
+    margin: 0 !important;
+    padding: 25px;
+}
+
+#galeria img {
+    width: 100%;
+    height: 250px;
+
+}
+
+#galeria img:hover {
+    border: 5px solid #f3840581
+}
+
+#carouselExampleFade img {
+    width: 100%;
+    height: 600px;
+    padding: 100px;
+}

@@ -1,0 +1,30 @@
+.animacion {
+    animation-name: mianimacion;
+    animation-duration: 4s;
+    position: relative;
+    animation-direction: reverse;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mianimacion {
+    0% {
+        left: 0px;
+    }
+
+    25% {
+        left: 20px;
+    }
+
+    50% {
+        left: 30px;
+    }
+
+    75% {
+        left: 15px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}

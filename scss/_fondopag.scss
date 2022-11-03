@@ -1,0 +1,6 @@
+.img-fondo {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    background-image: url(../imagenes/pexels-monstera-5874661.jpg);
+}

@@ -1,0 +1,66 @@
+/*----inicio de mi portada----*/
+.porta {
+    background-image: url(../imagenes/fondomil.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+
+
+}
+
+.titulo-portada {
+    background-color: rgba(255, 255, 255, 0.548);
+    text-align: center;
+    font-size: 3vw;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 25px;
+    position: absolute;
+    top: 120px;
+}
+
+.portadacon {
+    background-image: url(../imagenes/FotoJett.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.porta-deco {
+    background-image: url(../imagenes/FotoJet.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.porta-torta {
+    background-image: url(../imagenes/portada-torta.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.porta-arreglos {
+    background-image: url(../imagenes/fondomil.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

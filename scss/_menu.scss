@@ -1,0 +1,59 @@
+/*----inicio de header----*/
+.imagen {
+    width: 50px;
+}
+
+a,
+a:active {
+    text-decoration: none;
+    color: #f5f2f1;
+}
+
+.disf-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgba(240, 103, 66, 0.911);
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.df-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;  }
+ p {
+    margin: 10px;
+}
+
+
+.imagen {
+    border-radius: 25px;
+}
+
+.dfbarra {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+ li {
+    margin: 8px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navegacion :hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+    border-radius: 6px;
+
+}
+
+.titulo {
+    color: rgb(247, 245, 245);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}

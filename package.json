@@ -1,0 +1,25 @@
+{
+  "name": "proyecto-albornoz",
+  "version": "1.0.0",
+  "description": "mi primer web usando sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+  
+    "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "keywords": [
+    "developer"
+  ],
+  "author": "miguel albornoz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Albornoz13/proyecto-albornoz/issues"
+  },
+  "homepage": "https://github.com/Albornoz13/proyecto-albornoz#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
