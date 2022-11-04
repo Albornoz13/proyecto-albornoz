@@ -8,8 +8,7 @@
 .imagen {
   width: 50px; }
 
-a,
-a:active {
+a, a:active {
   text-decoration: none;
   color: #fbfbfb; }
 
@@ -39,13 +38,12 @@ p {
   justify-content: center;
   align-items: center;
   list-style: none; }
-
 li {
   margin: 8px;
   font-family: 'Raleway', sans-serif; }
 
 .navegacion :hover {
-  box-shadow: 5px 5px 20px #000000;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-3%);
   border-radius: 6px; }
 
@@ -99,24 +97,22 @@ li {
   display: flex;
   justify-content: center;
   align-items: center; }
-
-.porta-torta {
-  background-image: url(../imagenes/portada-torta.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 20vh;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.porta-arreglos {
-  background-image: url(../imagenes/fondomil.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  .porta-deco .porta-torta {
+    background-image: url(../imagenes/portada-torta.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .porta-deco .porta-arreglos {
+    background-image: url(../imagenes/fondomil.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 /*----Tarjetas----*/
 .container-card {
@@ -141,12 +137,12 @@ li {
   border-radius: 6px;
   overflow: hidden;
   background: #fbfbfb;
-  box-shadow: 0px 1px 10px #000000 0, 0, 0, 0.2;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   transition: all 400ms ease-out;
   cursor: default; }
 
 .card:hover {
-  box-shadow: 5px 5px 20px #000000 0, 0, 0, 0.4;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-3%); }
 
 .card img {
@@ -157,17 +153,17 @@ li {
   padding: 15px;
   text-align: center; }
 
-h3 {
+.card .contenido-card h3 {
   margin-bottom: 15px;
-  color: #6a6a6a; }
+  color: #7a7a7a; }
 
-p {
+.card .contenido-card p {
   line-height: 1.8;
   color: #6a6a6a;
   font-size: 14px;
   margin-bottom: 5px; }
 
-a {
+.card .contenido-card a {
   display: inline-block;
   padding: 10px;
   margin-top: 10px;
@@ -178,9 +174,9 @@ a {
   transition: all 400ms ease;
   margin-bottom: 5px; }
 
-a:hover {
+.card .contenido-card a:hover {
   background: #2fb4cc;
-  color: #fbfbfb; }
+  color: #fff; }
 
 @media screen and (max-width: 620px) {
   .container-card {
@@ -273,7 +269,8 @@ a:hover {
   border: 1px dashed #ea8fd8;
   height: 0;
   width: 100%;
-  align-items: center; }
+  align-items: center;
+  border-radius: 0px; }
 
 .body {
   background: url("bg.jpg") no-repeat top center;

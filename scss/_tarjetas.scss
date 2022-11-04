@@ -1,5 +1,6 @@
 /*----Tarjetas----*/
 
+
 .container-card {
     display: grid;
     gap: 20px;
@@ -24,14 +25,14 @@
     width: 100%;
     border-radius: 6px;
     overflow: hidden;
-    background: $blanco;
-    box-shadow: 0px 1px 10px $color-negro(0, 0, 0, 0.2);
+    background: rgb(251, 251, 251);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     transition: all 400ms ease-out;
     cursor: default;
 }
 
 .card:hover {
-    box-shadow: 5px 5px 20px $color-negro(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
     transform: translateY(-3%);
 }
 
@@ -45,35 +46,34 @@
     text-align: center;
 }
 
-h3 {
+.card .contenido-card h3 {
     margin-bottom: 15px;
-    color: $gris;
+    color: #7a7a7a;
 }
 
-p {
+.card .contenido-card p {
     line-height: 1.8;
-    color: $gris;
+    color: #6a6a6a;
     font-size: 14px;
     margin-bottom: 5px;
 }
 
-a {
+.card .contenido-card a {
     display: inline-block;
     padding: 10px;
     margin-top: 10px;
     text-decoration: none;
-    color: $celeste;
-    border: 1px solid $celeste;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
     border-radius: 4px;
     transition: all 400ms ease;
     margin-bottom: 5px;
 }
 
-a:hover {
-    background: $celeste;
-    color:$blanco;
+.card .contenido-card a:hover {
+    background: #2fb4cc;
+    color: #fff;
 }
-
 @media screen and (max-width:620px) {
     .container-card {
         float: left;

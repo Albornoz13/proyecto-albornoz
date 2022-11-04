@@ -3,8 +3,8 @@
     width: 50px;
 }
 
-a,
-a:active {
+
+a,a:active {
     text-decoration: none;
     color:$blanco;
 }
@@ -38,7 +38,8 @@ a:active {
     justify-content: center;
     align-items: center;
     list-style: none;
-}
+  
+    }
 
  li {
     margin: 8px;
@@ -46,7 +47,7 @@ a:active {
 }
 
 .navegacion :hover {
-    box-shadow: 5px 5px 20px $color-negro;
+    box-shadow: 5px 5px 20px  rgba(0, 0, 0, 0.4);
     transform: translateY(-3%);
     border-radius: 6px;
 
@@ -57,3 +58,4 @@ a:active {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
 }
+

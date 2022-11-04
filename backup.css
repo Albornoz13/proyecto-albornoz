@@ -12,8 +12,8 @@
     width: 50px;
 }
 
-a,
-a:active {
+
+a,a:active {
     text-decoration: none;
     color: #f5f2f1;
 }
