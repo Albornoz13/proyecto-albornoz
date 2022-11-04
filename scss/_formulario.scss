@@ -1,3 +1,7 @@
+@mixin df {
+  display: flex;  
+}
+
 .body{
     background: url('bg.jpg') no-repeat top center;
     background-size: cover;
@@ -11,10 +15,10 @@
     transform: translate(-50%, -50%);
     width: 100%;
     max-width: 550px;
-    background: rgba(240, 162, 162, 0.8);
+    background:$rosa-claro;
     padding: 100px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px $color-negro;
   }
   
   .wrapper .title h1{
@@ -24,11 +28,11 @@
   }
   
   .contact-form{
-    display: flex;
-  }
+    @include df(); 
+   }
   
   .input-fields{
-    display: flex;
+    @include df;
     flex-direction: column;
     margin-right: 4%;
   }
@@ -55,11 +59,11 @@
   
   ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
-    color: #c5ecfd;
+    color: $azul-claro;
   }
   ::-moz-placeholder {
     /* Firefox 19+ */
-    color: #c5ecfd;
+    color: $azul-claro;
   }
   :-ms-input-placeholder {
     /* IE 10+ */

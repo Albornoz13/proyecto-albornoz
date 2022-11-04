@@ -11,7 +11,7 @@
 a,
 a:active {
   text-decoration: none;
-  color: #f5f2f1; }
+  color: #fbfbfb; }
 
 .disf-header {
   display: flex;
@@ -27,7 +27,7 @@ a:active {
   justify-content: center;
   align-items: center; }
 
-.df-logo p {
+p {
   margin: 10px; }
 
 .imagen {
@@ -40,17 +40,17 @@ a:active {
   align-items: center;
   list-style: none; }
 
-.dfbarra li {
+li {
   margin: 8px;
   font-family: 'Raleway', sans-serif; }
 
 .navegacion :hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 20px #000000;
   transform: translateY(-3%);
   border-radius: 6px; }
 
 .titulo {
-  color: #f7f5f5;
+  color: #fbfbfb;
   font-family: 'Raleway', sans-serif;
   font-weight: 500; }
 
@@ -141,12 +141,12 @@ a:active {
   border-radius: 6px;
   overflow: hidden;
   background: #fbfbfb;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 10px #000000 0, 0, 0, 0.2;
   transition: all 400ms ease-out;
   cursor: default; }
 
 .card:hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 20px #000000 0, 0, 0, 0.4;
   transform: translateY(-3%); }
 
 .card img {
@@ -157,17 +157,17 @@ a:active {
   padding: 15px;
   text-align: center; }
 
-.card .contenido-card h3 {
+h3 {
   margin-bottom: 15px;
-  color: #7a7a7a; }
+  color: #6a6a6a; }
 
-.card .contenido-card p {
+p {
   line-height: 1.8;
   color: #6a6a6a;
   font-size: 14px;
   margin-bottom: 5px; }
 
-.card .contenido-card a {
+a {
   display: inline-block;
   padding: 10px;
   margin-top: 10px;
@@ -178,9 +178,9 @@ a:active {
   transition: all 400ms ease;
   margin-bottom: 5px; }
 
-.card .contenido-card a:hover {
+a:hover {
   background: #2fb4cc;
-  color: #fff; }
+  color: #fbfbfb; }
 
 @media screen and (max-width: 620px) {
   .container-card {
@@ -263,7 +263,7 @@ a:active {
 .linea {
   display: block;
   margin-top: 15px;
-  border: 1px dashed grey;
+  border: 1px dashed #6a6a6a;
   height: 0;
   width: 100%; }
 
@@ -290,7 +290,7 @@ a:active {
   background: rgba(240, 162, 162, 0.8);
   padding: 100px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 0 10px #000000; }
 
 .wrapper .title h1 {
   color: #000000;
@@ -332,14 +332,14 @@ a:active {
 
 :-ms-input-placeholder {
   /* IE 10+ */
-  color: #020303; }
+  color: #000000; }
 
 .btn {
   background: #330452;
   text-align: center;
   padding: 15px;
   border-radius: 5px;
-  color: black;
+  color: #000000;
   cursor: pointer;
   text-transform: uppercase; }
 

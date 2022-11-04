@@ -25,7 +25,7 @@
 .linea {
     display: block;
     margin-top: 15px;
-    border: 1px dashed grey;
+    border: 1px dashed $gris;
     height: 0;
     width: 100%
 }
@@ -34,7 +34,7 @@
     display: block;
     margin-top: 15px;
 
-    border: 1px dashed rgb(234, 143, 216);
+    border: 1px dashed $violeta-claro;
     height: 0;
     width: 100%;
     align-items: center;

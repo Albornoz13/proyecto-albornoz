@@ -6,7 +6,7 @@
 a,
 a:active {
     text-decoration: none;
-    color: #f5f2f1;
+    color:$blanco;
 }
 
 .disf-header {
@@ -14,7 +14,7 @@ a:active {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    background-color: rgba(240, 103, 66, 0.911);
+    background-color: $marron-claro;
     padding: 15px;
     border-radius: 25px;
 }
@@ -46,14 +46,14 @@ a:active {
 }
 
 .navegacion :hover {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 20px $color-negro;
     transform: translateY(-3%);
     border-radius: 6px;
 
 }
 
 .titulo {
-    color: rgb(247, 245, 245);
+    color: $blanco;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
 }
