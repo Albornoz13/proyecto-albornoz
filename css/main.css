@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box; }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 /*----inicio de header----*/
 .imagen {
   width: 50px; }
@@ -198,10 +203,10 @@ li {
     cursor: default; }
   .container-card1 .card1 img {
     width: 100%;
-    height: 210px; }
+    height: 350px; }
   .container-card1 .card1 img {
     width: 100%;
-    height: 210px; }
+    height: 300px; }
 
 .card1 .contenido-card1 {
   padding: 15px;
@@ -242,8 +247,8 @@ li {
 
 #carouselExampleFade img {
   width: 100%;
-  height: 600px;
-  padding: 100px; }
+  height: 60%;
+  padding: 150px; }
 
 .animacion {
   animation-name: mianimacion;
