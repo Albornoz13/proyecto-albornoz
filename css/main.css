@@ -3,9 +3,6 @@
   padding: 0;
   box-sizing: border-box; }
 
-html, body {
-  width: 100% !important;
-  overflow-x: hidden !important; }
 
 /*----inicio de header----*/
 .imagen {
@@ -125,11 +122,14 @@ li {
 /*----Tarjetas----*/
 .container-card {
   display: grid;
+  margin:auto;
   gap: 20px;
   padding: 100px;
   grid-column-gap: 40px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-auto-rows: minmax(300px, 1fr); }
+
+
   .container-card .titulo-cards {
     width: 100%;
     max-width: 1080px;
@@ -384,3 +384,27 @@ li {
   width: 100%;
   align-items: center;
   border-radius: 0px; }
+
+  /*medias querys table*/ 
+  @media (max-width:1024px) {
+  .container-card{
+    width: 50%;
+  }
+
+    }
+    
+   /*medias querys telefono*/
+    @media (max-width: 320px) {
+      .container-card {
+        width: 50%;
+      }
+    .icons {  max-width: 320px;
+        width: 50%;
+        }
+
+        footer .titulo-footer {   max-width: 320px;
+          width: 50%;
+
+        }
+        
+         }
