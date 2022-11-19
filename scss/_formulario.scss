@@ -1,7 +1,3 @@
-@mixin df {
-  display: flex;  
-}
-
 .body{
     background: url('bg.jpg') no-repeat top center;
     background-size: cover;
@@ -19,43 +15,54 @@
     padding: 100px;
     border-radius: 5px;
     box-shadow: 0 0 10px $color-negro;
+    
+    .wrapper { 
+      color: $color-negro;
+      text-align: center;
+      margin-bottom: 25px;
+  }
   }
   
-  .wrapper .title h1{
-    color: $color-negro;
-    text-align: center;
-    margin-bottom: 25px;
-  }
+    .title h1{
+      color: $color-negro;
+      text-align: center;
+      margin-bottom: 25px;
+      .contact-form{
+        display: flex
+       }
+      
+      .input-fields{
+        display: flex;
+        flex-direction: column;
+        margin-right: 4%;
+      }
+      
+      .input-fields,
+      .msg{
+        width: 48%;
+      }
+      
+      .input-fields .input,
+      .msg textarea{
+        margin: 10px 0;
+        background: transparent;
+        border: 0px;
+        border-bottom: 2px solid $color-negro;
+        padding: 10px;
+        color: $color-negro;
+        width: 100%;
+      }
+      
+      .msg textarea{
+        height: 212px;
+      }
+  } 
+
   
-  .contact-form{
-    @include df(); 
-   }
   
-  .input-fields{
-    @include df;
-    flex-direction: column;
-    margin-right: 4%;
-  }
   
-  .input-fields,
-  .msg{
-    width: 48%;
-  }
   
-  .input-fields .input,
-  .msg textarea{
-    margin: 10px 0;
-    background: transparent;
-    border: 0px;
-    border-bottom: 2px solid $color-negro;
-    padding: 10px;
-    color: $color-negro;
-    width: 100%;
-  }
   
-  .msg textarea{
-    height: 212px;
-  }
   
   ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
@@ -79,16 +86,21 @@
       cursor: pointer;
       text-transform: uppercase;
   }
-  
-  @media screen and (max-width: 600px){
-    .contact-form{
-      flex-direction: column;
+
+  @media (min-width:768px){
+    .wrapper{
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 70%;
+      max-width: 70vh;
+      background:$rosa-claro;
+      padding: 100px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px $color-negro;
     }
-    .msg textarea{
-      height: 80px;
-    }
-    .input-fields,
-    .msg{
-      width: 100%;
-    }
+
   }
+  
+  

@@ -1,4 +1,4 @@
-/*----Tarjetas----*/
+/*----Tarjetas INDEX----*/
 
 
 .container-card {
@@ -39,12 +39,49 @@
         width: 100%;
         height: 210px;
     }
-    .card img {
-        width: 100%;
-        height: 210px;
-    }
+    
     
 }
+@media (min-width:768px){ 
+    .container-card {
+    
+        display: grid;
+        gap: 10px;
+        padding: 60px;
+        grid-column-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-auto-rows: minmax(300px, 1fr);
+    
+       
+    
+        .titulo-cards {
+            width: 80%;
+            max-width: 720px;
+            margin: auto;
+            padding: 15px;
+            margin-top: 15px;
+            text-align: center;
+            min-width: 150px;
+        }
+    
+    
+        .card {
+            width: 60%;
+            border-radius: 3px;
+            overflow: hidden;
+            background: rgb(251, 251, 251);
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+            transition: all 400ms ease-out;
+            cursor: default;
+        }
+    
+       
+    
+        .card img {
+            width: 100%;
+            height: 180px;
+        }
+    }
 
 
 .card .contenido-card {
@@ -80,11 +117,15 @@
     }
     
 }
+}
 
 
 .oe{
     text-align: center;
 }
+
+/*----FIN DE TARJETAS INDEX----*/
+/*----INICIO DE TARJETAS ARREGLOS----*/
 .container-card1 {
     
     display: grid;
